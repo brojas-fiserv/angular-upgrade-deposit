@@ -1,5 +1,5 @@
 {
-  "name": "fiserv-portal",
+  "name": "portal",
   "version": "9.0.0",
   "license": "MIT",
   "scripts": {
@@ -7,15 +7,11 @@
     "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --configuration production --aot",
-    "test": "jest --coverage",
-    "test-watch": "jest --watch",
     "lite-prod": "lite-server -c bs-config.json",
-    "test-and-build": "jest --coverage && ng build",
-    "dev": "node --max-old-space-size=4096 `which npm` run test-and-build",
+    "dev": "node --max-old-space-size=4096 `which npm` run build",
     "prod": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build --configuration production",
     "e2e": "ng e2e --port 4200",
     "e2e-env": "ng e2e --no-serve",
-    "protractor": "protractor protractor.conf.qa.js",
     "lint": "ng lint"
   },
   "dependencies": {
@@ -35,7 +31,6 @@
     "@swimlane/ngx-datatable": "^20.1.0",
     "@types/quill": "^1.3.10",
     "@types/uuid": "^3.4.13",
-    "angular-device-information": "^4.0.0",
     "angular2-text-mask": "^9.0.0",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.3",
@@ -58,7 +53,6 @@
     "parchment": "^1.1.4",
     "popper.js": "^1.16.1",
     "prod": "^1.0.1",
-    "protractor": "~7.0.0",
     "quill": "^1.3.7",
     "quill-delta": "^5.0.0",
     "rxjs": "^7.5.6",
@@ -81,10 +75,6 @@
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/language-service": "^15.2.10",
     "@angular/localize": "^15.2.10",
-    "@types/faker": "4.1.1",
-    "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/jest": "26.0.24",
     "@types/lodash": "^4.14.184",
     "@types/lodash-es": "^4.17.6",
     "@types/lolex": "2.1.2",
@@ -95,23 +85,14 @@
     "basic-keyboard-event-polyfill": "1.0.1",
     "browserstack-local": "~1.4.8",
     "eslint": "^8.33.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "jest": "^27.0.0",
-    "jest-preset-angular": "^8.3.0",
     "lite-server": "^2.3.0",
     "lolex": "^2.7.0",
     "phantomjs-polyfill-includes": "^1.0.2",
     "puppeteer": "^2.1.1",
     "sass": "~1.26.11",
-    "ts-jest": "^27.0.7",
-    "ts-mockito": "^2.6.1",
     "ts-node": "^9.1.1",
     "typescript": "~4.9.5",
     "yargs": "^16.2.0"
-  },
-  "jest": {
-    "testEnvironment": "node"
   },
   "resolutions": {
     "webpack": "^5.0.0"
