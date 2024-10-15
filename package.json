@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@angular/animations": "^15.2.10",
-    "@angular/cli": "^15.2.10",
+    "@angular/cli": "^18.0.0",
     "@angular/common": "^15.2.10",
     "@angular/compiler": "^15.2.10",
     "@angular/compiler-cli": "^15.2.10",
@@ -50,7 +50,7 @@
     "lodash-es": "^4.17.21",
     "mydaterangepicker": "^4.2.1",
     "ng2-dragula": "^1.5.0",
-    "ng2-pdf-viewer": "^10.0.0",
+    "ng2-pdf-viewer": "^10.3.0",
     "ngx-auto-unsubscribe": "^2.0.0",
     "ngx-device-detector": "^8.0.0",
     "ngx-quill": "^15.0.0",
